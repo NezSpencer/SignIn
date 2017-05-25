@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SignIn</string>
+    <string name="welcome_text">Welcome to AdsApp</string>
+    <string name="referral_hint">Referral id or Member id</string>
+    <string name="name_hint">Name</string>
+    <string name="dob_hint">Date of birth</string>
+    <string name="email_hint">Email address</string>
+    <string name="phone_hint">Phone number</string>
+
+</resources>
