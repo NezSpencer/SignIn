@@ -14,9 +14,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-import dmax.dialog.SpotsDialog;
-
-
 /**
  * Created by AGBOMA franklyn on 5/25/17.
  */
