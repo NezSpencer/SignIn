@@ -6,5 +6,7 @@
     <string name="dob_hint">Date of birth</string>
     <string name="email_hint">Email address</string>
     <string name="phone_hint">Phone number</string>
+    <string name="welcome">Welcome to AdsApp!</string>
+    <string name="condition">By tapping \'Register\' you agree to the term &amp; condition</string>
 
 </resources>
