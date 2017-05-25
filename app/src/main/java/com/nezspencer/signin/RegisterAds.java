@@ -25,7 +25,6 @@ public class RegisterAds extends AppCompatActivity {
 
     private EditText regId,name,date,email, mobile;
     private Button regBtn;
-    private AlertDialog loginDialog;
     public static String NAME = "";
 
     @Override
@@ -38,8 +37,6 @@ public class RegisterAds extends AppCompatActivity {
 
     private void init() {
 
-        loginDialog = new SpotsDialog(this, "Registering...");
-        loginDialog.setCancelable(false);
         regId = (EditText) findViewById(R.id.ref_id);
         name = (EditText) findViewById(R.id.name);
         date = (EditText) findViewById(R.id.date);
@@ -103,19 +100,15 @@ public class RegisterAds extends AppCompatActivity {
 
                 if(!getId.isEmpty() && !getName.isEmpty() && !getDate.isEmpty()
                         && valid  && number){
-                    loginDialog.show();
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
 
-                            if(loginDialog.isShowing()){
-                                loginDialog.dismiss();
-                            }
                             Toast.makeText(RegisterAds.this, "Registered successfully",
                                     Toast.LENGTH_SHORT).show();
                             NAME = getName;
                         }
-                    }, 5000);
+                    }, 2000);
 
 
                     startActivity(new Intent(RegisterAds.this, Event.class));
